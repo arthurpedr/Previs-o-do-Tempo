@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja a previsão do tempo da sua cidade informando apenas o CEP. Simples, rápido e atualizado!">
+    <meta name="keywords" content="HTML, CSS, JavaScript, tempo, previsão">
+    <title>Previsão do Tempo</title>
+
+</head>
+
+<body>
+
+    <div class="form">
+
+        <h1>Previsão do Tempo</h1>
+
+        <input type="text" placeholder="Digite seu CEP" id="cep" name="cep"  autocomplete="off" />
+
+        <!-- Campo cidade preenchido automaticamente pelo CEP -->
+        <input type="text" id="cityInput" placeholder="Digite o nome da cidade" autocomplete="off" />
+
+        <button type="submit" onclick="buscarClima()">Buscar Clima</button>
+
+        <button id="clearButton" type="reset">Limpar</button>
+    
+        <div id="weather">Informe o CEP da sua cidade e confira a previsão do clima</div>
+    </div>
+        <!-- Loader -->
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
+        
+   
+
+
+    <!-- Mascarar o CEP -->
+    <script src="https://unpkg.com/imask"></script>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
