@@ -31,11 +31,11 @@ cd Previs-o-do-Tempo
 
 ```
 /
-├── CSS
-├── FONTE
-├── JS
+├── IMG/
 ├── README.md
-└── index.html
+├── Index.html
+├── Script.js
+└── Style.css
 ```
 
 ## 📌 Funcionalidades
