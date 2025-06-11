@@ -117,3 +117,16 @@ clearButton.addEventListener('click', () => {
   // Limpa o valor de cep
   cep.value = '';
 });
+
+//Dark Mode Toggle
+const toggleTheme = document.getElementById('toggle-theme');
+
+toggleTheme.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+
+    if (document.body.classList.contains('dark-theme')) {
+        toggleTheme.textContent = '☀️';
+    } else {
+        toggleTheme.textContent = '🌙';
+    }
+});
